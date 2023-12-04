@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueilportfolio</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <!--debut-->
+    <header class="container-fluid header">
+      <div class="container">
+        <a href="index.Accueil.html" class="logo"> Juba Nait rabah </a>
+        <nav class="menu">
+          <a href="index.Accueil.html"> Accueil</a>
+          <a href="monportfolio.html"> Portfolio</a>
+          <a href="contact.html"> Contact </a>
+          <a href="mentionslegales.html"> Mentions legales</a>
+        </nav>
+      </div>
+    </header>
+    <!--fin header-->
+
+    <!--debut banniere-->
+    <section class="container-fluid banner">
+      <div class="ban">
+        <img
+          src="images/apple-coffee-computer-459653.jpg"
+          alt="banniére du site"
+        />
+      </div>
+
+      <div class="inner-banner">
+        <h2>Juba Nait rabah</h2>
+        <h1>Developpeur Web</h1>
+        <a href="contact.html" class="btn btn-custom"> Contactez-moi!</a>
+      </div>
+    </section>
+
+    <!--API DE GEOLOCALISATION-->
+
+    <section class="btn-geo">
+      <div id="infos">Cliquer...</div>
+      <button id="localisation">Ou suis-je?</button>
+      <button id="carte">Sur la carte?</button>
+    </section>
+    <section class="cartegeo">
+      <div id="map"></div>
+    </section>
+    <footer class="container-fluid footer">
+      <div class="footertext"><p>Copyright (c) 2023</p></div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
